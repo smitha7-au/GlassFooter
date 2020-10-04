@@ -1,0 +1,159 @@
+body {
+    background-image:url("../image/bg.jpg");
+    
+}
+
+a:link, a:visited, a:hover, a:active {
+
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+/*creating a custom font */
+@font-face {
+    font-family: nicefont;
+    src: url("../fonts/nicefont.otf");
+}
+
+#glass-footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    height: 40px;
+    text-shadow: 1px 1px 1px black;
+    background: rgba(0,0,0,.4);
+    border-top: 1px solid rgba(0,0,0,.5);
+    box-shadow: inset 0 1px rgba(255,255,255.3), inset 0 10px rgba(255,255,255,.2), inset 0 10px 20px rgba(255,255,255,.25), inset 0 -15px 30px rgba(255,255,255,.3);
+    color:rgb(208,208,208);
+}
+
+#footer-menu {
+    width:100%;
+    height:40px;
+}
+
+#calc-tab {
+    left:102px;
+    width:150px;
+
+}
+
+#calc-list {
+    display: none;
+    background: rgba(0,0,0,.6);
+    width: 180px;
+    padding: 5px;
+    border:1px solid black;
+    position: absolute;
+    bottom: 48px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+#calc-list li {
+    width:180px
+}
+
+#calc-tab:hover #calc-list {
+    display: block;
+    color:rgb(208,208,208);
+}
+
+.tab {
+    float:left;
+    position: absolute;
+    font-family: nicefont;
+    border-right: 2px solid rgba(255,255,255,.4);
+    text-align: center;
+    transition:background 1s;
+    height: 40px;
+
+}
+
+.tab:hover {
+    background: rgb(0,0,0,.3);
+}
+
+#home-tab {
+    width:100px;
+}
+#home-tab a {
+    height: 40px;
+    font-family: nicefont;
+}
+
+#display-tab {
+width: 500px;
+left:254px;
+}
+
+#notifications-tab {
+    right: 105px;
+    font-weight:130px;
+    border-right:none;
+}
+
+#notifications-tab:hover {
+    background: none;
+}
+
+#notifications-tab li {
+    width:40px;
+    padding-top:5px;
+    position: relative;
+}
+
+#notifications-tab li:hover {
+    background: none;
+}
+
+.notifications:hover {
+    animation-name:moveUp;
+    animation-fill-mode: forwards;
+    animation-duration:0.5s;
+}
+
+@keyframes moveUp {
+    0% {margin-top:0px;}
+    100% {margin-top:-10px;}
+}
+
+#logout-tab {
+    width: 105px;
+    right: 1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-right: none;
+}
+
+.logout:hover span {
+ position: relative;
+ bottom:3px;
+}
+
+#logout-tab a {
+    height: 40px;
+    width: 107px;
+    display:block;
+}
+
+#logout-tab:hover a {
+    color:red;
+}
+
+.border-bottom-btn {
+    border-bottom: 1px solid white;
+}
+
+.add-padding-top {
+    padding-top: 8px;
+}
+
+.calc-list-item-height {
+    height:25px;
+}
